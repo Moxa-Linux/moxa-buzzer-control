@@ -1,0 +1,5 @@
+moxa-buzzer-control (1.0.0+deb9) stretch; urgency=low
+
+  * Initial release.
+
+ -- Ken CJ Chou <KenCJ.Chou@moxa.com>  Thu, 22 Feb 2018 18:00:00 +0800

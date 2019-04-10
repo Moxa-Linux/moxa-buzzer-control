@@ -1,0 +1,4 @@
+libmx_buzzer_ctl.so.1 libmoxa-buzzer-control1 #MINVER#
+ mx_buzzer_init@Base 1.0.0
+ mx_buzzer_play_sound@Base 1.0.0
+ mx_buzzer_stop_sound@Base 1.0.0

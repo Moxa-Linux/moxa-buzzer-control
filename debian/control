@@ -1,0 +1,36 @@
+Source: moxa-buzzer-control
+Priority: required
+Maintainer: Ken CJ Chou <KenCJ.Chou@moxa.com>
+Build-Depends: debhelper (>= 10),
+               dh-exec,
+               libmoxa-gpio-control-dev (>= 1.0.0),
+               libmoxa-errno-dev (>= 1.0.0),
+               libjson-c-dev
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://www.moxa.com/
+
+Package: libmoxa-buzzer-control1
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libmoxa-gpio-control1 (>= 1.0.0),
+         libjson-c3
+Description: Moxa buzzer control library - shared library
+ Moxa buzzer control library can be used to control the
+ buzzer on the device. We provide interfaces for controlling
+ the buzzer to beep for a certain period or keep beeping.
+
+Package: libmoxa-buzzer-control-dev
+Architecture: any
+Multi-Arch: same
+Section: libdevel
+Depends: libmoxa-buzzer-control1 (= ${binary:Version}),
+         ${misc:Depends}
+Description: Moxa buzzer control library - development files
+ Moxa buzzer control library can be used to control the
+ buzzer on the device. We provide interfaces for controlling
+ the buzzer to beep for a certain period or keep beeping.
+
